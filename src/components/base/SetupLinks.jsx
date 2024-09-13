@@ -9,7 +9,7 @@ import notifications from '../../app/images/icons/notification.svg';
 import avatar from '../../app/images/avatar.png';
 
 
-export function SocialLinks() {
+export function SetupLinks() {
     return (
         <ul className='w-48 flex justify-between items-center'>
             <li>

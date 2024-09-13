@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const inter = localFont({
-  src: "./fonts/Inter.ttf",
-  variable: "--font-inter",
-  weight: "400 500 600",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} antialiased`}
-      >
+      <body>
         {children}
       </body>
     </html>

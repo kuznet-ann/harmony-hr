@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { Searchbar } from './Searchbar';
 import { MenuLinks } from './MenuLinks';
-import { SocialLinks } from './SocialLinks';
+import { SetupLinks } from './SetupLinks';
 
 export function HeaderBlock() {
     return (
@@ -16,7 +16,7 @@ export function HeaderBlock() {
 
                 <MenuLinks />
                 <Searchbar />
-                <SocialLinks />
+                <SetupLinks />
 
             </div>
         </header>

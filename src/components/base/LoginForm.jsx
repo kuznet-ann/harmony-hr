@@ -11,16 +11,16 @@ export function LoginForm() {
 			</CardHeader>
 			<CardContent className='grid gap-4'>
 				<div className='grid gap-2'>
-					<Label htmlFor='email'>username</Label>
-					<Input id='email' type='email' placeholder='m@example.com' required />
+					<Label htmlFor='email'>Username</Label>
+					<Input className='border-[1px] border-primary' id='email' type='email' placeholder='m@example.com' required />
 				</div>
 				<div className='grid gap-2'>
-					<Label htmlFor='password'>password</Label>
-					<Input id='password' type='password' required />
+					<Label htmlFor='password'>Password</Label>
+					<Input className='border-[1px] border-primary' id='password' type='password' required />
 				</div>
 			</CardContent>
 			<CardFooter>
-				<Button className='w-full'>Sing up</Button>
+				<Button className='w-full'>Sign in</Button>
 			</CardFooter>
 		</Card>
 	);
