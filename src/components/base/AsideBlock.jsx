@@ -47,7 +47,7 @@ const reportsInfo = [
 
 export function AsideBlock() {
     return (
-        <aside className='absolute w-56 flex flex-col items-center'>
+        <aside className='absolute top-[256px] w-56 flex flex-col items-center z-1'>
 
             <Card className='mb-4 p-6 w-full'>
                 <CardContent className='p-0'>
@@ -126,8 +126,8 @@ export function AsideBlock() {
                 </CardHeader>
 
                 <CardContent className='p-0'>
-                    {reportsInfo.slice(0, 4).map((el) => (
-                        <p className='mb-2 flex font-medium text-sm'>
+                    {reportsInfo.slice(0, 4).map((el, i) => (
+                        <p className='mb-2 flex font-medium text-sm' key={i}>
                             <Image className='mr-2' src={acount} alt='Phone icon' />
                             {el.name}
                         </p>

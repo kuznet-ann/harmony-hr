@@ -6,7 +6,7 @@ export function Searchbar() {
     return (
         <form className='w-[395px] relative' >
             <input
-                className='w-full p-2 pl-12 border-[1px] border-primary placeholder-primary rounded-xl text-lg outline-0'
+                className='w-full p-2 pl-12 border-[1px] border-accent placeholder-primary rounded-xl text-lg outline-0'
                 type='search'
                 placeholder='Search'
             />
