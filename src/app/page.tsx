@@ -1,6 +1,7 @@
 import { HeaderBlock } from '../components/base/HeaderBlock';
 import { InfoBlock } from '../components/base/InfoBlock';
 import { AsideBlock } from '../components/base/AsideBlock';
+import { TimeOffBlock } from '../components/base/TimeOffBlock';
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			</div>
 			<div className='w-[1296px] mx-auto'>
 				<AsideBlock />
+				<TimeOffBlock />
 			</div>
 		</main>
 	);
