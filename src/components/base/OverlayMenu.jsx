@@ -6,7 +6,7 @@ import { SetupLinks } from './SetupLinks';
 export function OverlayMenu({ active }) {
 
     return (
-        <div className={`${active ? 'active' : ''} z-10 px-8 py-6 w-full h-full absolute top-0 right-[-100%] bg-secondary transition-all duration-300 [&.active]:right-0 sm:w-1/2 sm:right-[-50%]`}>
+        <div className={`${active ? 'active' : ''} z-10 px-8 py-6 w-full h-full hidden absolute top-0 right-[-100%] bg-secondary transition-all duration-300 [&.active]:block [&.active]:right-0 sm:w-1/2 sm:right-[-50%]`}>
             <nav className='mb-4 flex flex-col'>
                 <Link
                     href={'#'}

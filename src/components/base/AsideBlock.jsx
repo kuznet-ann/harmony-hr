@@ -47,7 +47,7 @@ const reportsInfo = [
 
 export function AsideBlock() {
     return (
-        <aside className='absolute top-[256px] w-56 flex flex-col items-center z-1'>
+        <aside className='absolute top-[240px] left-5 w-56 flex flex-col items-center z-1 xl:left-auto xl:top-[256px]'>
 
             <Card className='mb-4 p-6 w-full'>
                 <CardContent className='p-0'>

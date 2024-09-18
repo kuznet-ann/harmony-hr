@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 export function TimeOffCard({ title, image, imageAlt, nums, subtitle, text, subtext }) {
     return (
-        <div className='max-w-[264px] w-full'>
+        <div className='w-[264px]'>
             <Card className='p-4 min-h-[138px] grid items-center bg-[#F0F3F8]'>
                 <CardHeader className='p-0'>
                     <CardTitle className='font-semibold text-xl text-center leading-[100%]'>{title}</CardTitle>

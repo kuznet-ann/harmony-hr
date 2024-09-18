@@ -35,19 +35,20 @@ const userStatistics = [
 
 export function TimeOffList() {
     return (
-        <div className='mx-auto mb-6 max-w-[888px] w-full flex justify-between'>
-            {userStatistics.map((el, i) => (
-                <TimeOffCard
-                    key={i}
-                    title={el.title}
-                    image={el.icon}
-                    imageAlt=''
-                    nums={el.nums}
-                    subtitle={el.subtitle}
-                    text={el.text}
-                    subtext={el.subtext}
-                />
-            ))}
-        </div>
+        <div className="overflow-x-scroll w-full">
+            <div className='mx-auto mb-6 w-[824px] flex justify-between sm:gap-8 lg:gap-12 lg:w-[888px]'>
+                {userStatistics.map((el, i) => (
+                    <TimeOffCard
+                        key={i}
+                        title={el.title}
+                        image={el.icon}
+                        imageAlt=''
+                        nums={el.nums}
+                        subtitle={el.subtitle}
+                        text={el.text}
+                        subtext={el.subtext}
+                    />
+                ))}
+            </div></div>
     );
 }
