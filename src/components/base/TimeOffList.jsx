@@ -36,8 +36,9 @@ const userStatistics = [
 export function TimeOffList() {
     return (
         <div className='mx-auto mb-6 max-w-[888px] w-full flex justify-between'>
-            {userStatistics.map((el) => (
+            {userStatistics.map((el, i) => (
                 <TimeOffCard
+                    key={i}
                     title={el.title}
                     image={el.icon}
                     imageAlt=''

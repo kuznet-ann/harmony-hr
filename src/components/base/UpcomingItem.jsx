@@ -18,7 +18,7 @@ export function UpcomingItem({ image = '', imageAlt = '', date = '', day = '', d
                     <p className='font-medium text-sm'>{date}</p>
                     <p className='font-medium text-sm'>
                         {dot ? (
-                            <div className='mr-1 w-2 h-2 inline-block rounded-full bg-accent'></div>
+                            <span className='mr-1 w-2 h-2 inline-block rounded-full bg-accent'></span>
                         ) : (
                             ''
                         )}

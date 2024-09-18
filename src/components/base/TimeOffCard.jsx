@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import React from 'react';
+
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 export function TimeOffCard({ title, image, imageAlt, nums, subtitle, text, subtext }) {

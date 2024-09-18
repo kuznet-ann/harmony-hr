@@ -8,19 +8,21 @@ export function HistoryTable(balance) {
     return (
         <table className='mt-4 w-full font-medium text-sm text-left border-collapse'>
             <thead className='bg-secondary'>
-                <th className='pl-2 py-4 flex gap-1'>
-                    Date{' '}
-                    <Image
-                        src={arrowDown}
-                        alt='Arrow down'
-                        width={16}
-                        height={16}
-                    />
-                </th>
-                <th className='pl-2 py-4'>Description</th>
-                <th className='pl-2 py-4'>Used Days (-)</th>
-                <th className='pl-2 py-4'>Earned Days (+)</th>
-                <th className='pl-2 py-4'>Balance</th>
+                <tr>
+                    <th className='pl-2 py-4 flex gap-1'>
+                        Date{' '}
+                        <Image
+                            src={arrowDown}
+                            alt='Arrow down'
+                            width={16}
+                            height={16}
+                        />
+                    </th>
+                    <th className='pl-2 py-4'>Description</th>
+                    <th className='pl-2 py-4'>Used Days (-)</th>
+                    <th className='pl-2 py-4'>Earned Days (+)</th>
+                    <th className='pl-2 py-4'>Balance</th>
+                </tr>
             </thead>
             <tbody>
                 {balance.balance.map((el, i) => (

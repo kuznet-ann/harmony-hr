@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { redirect } from 'next/dist/server/api-utils';
 
 export function LoginForm() {
 	return (
@@ -9,15 +10,28 @@ export function LoginForm() {
 			<CardHeader>
 				<CardTitle className='text-2xl text-center'>Login</CardTitle>
 			</CardHeader>
-			<CardContent className='grid gap-4'>
-				<div className='grid gap-2'>
-					<Label htmlFor='email'>Username</Label>
-					<Input className='border-[1px] border-primary' id='email' type='email' placeholder='m@example.com' required />
-				</div>
-				<div className='grid gap-2'>
+			<CardContent>
+				<form action={async (formData) => {
+					'use server';
+					await login(formData);
+					redirect('/')
+				}}>
+					<Label htmlFor='email'>Email</Label>
+					<Input
+						className='mb-2 border-[1px] border-primary'
+						id='email'
+						type='email'
+						placeholder='m@example.com'
+						required
+					/>
 					<Label htmlFor='password'>Password</Label>
-					<Input className='border-[1px] border-primary' id='password' type='password' required />
-				</div>
+					<Input
+						className='border-[1px] border-primary'
+						id='password'
+						type='password'
+						required
+					/>
+				</form>
 			</CardContent>
 			<CardFooter>
 				<Button className='w-full'>Sign in</Button>
